@@ -5,6 +5,7 @@ import java.awt.event.*;
 import javax.swing.*;
 import javax.swing.event.*;
 
+// 계산기 앱 
 public class Calc extends JFrame {
 	
 	static JLabel label;
