@@ -1,0 +1,10 @@
+
+public class OutOfResourcesException extends Exception{
+	public OutOfResourcesException() {
+		System.out.println("OutOfResourcesException 객체생성");
+	}
+	public OutOfResourcesException(String msg) {
+		super(msg);
+		System.out.println("OutOfResourcesException 객체생성");
+	}
+}
