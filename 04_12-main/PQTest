@@ -1,0 +1,33 @@
+package PQTest;
+
+import java.util.PriorityQueue;
+import java.util.Queue;
+
+public class PQTest {
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+			test1();
+	}
+
+	public static void test1() {
+		Queue<String> q = new PriorityQueue<>();
+		q.offer("PineApple"); //q.add 해도됨
+		q.offer("Banana");
+		q.offer("Carrot");
+		q.offer("Cherry");
+		q.offer("Strawberry");
+		
+		// 엿보기, 인출은 아님
+		System.out.println(q.peek()); //q.element() 해도됨
+		System.out.println(q.peek());
+		System.out.println(q.peek());
+		System.out.println("###########");
+		
+		while(q.size() > 0) {
+			System.out.println(q.poll()); //q.remove() 빼도됨
+		}
+		System.out.println("###########");
+		
+		// QUEUE 다른 예제로 한다고 하심
+	}
+}
